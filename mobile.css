@@ -1,0 +1,17 @@
+@media (max-width : 425px){
+    .sec-nav-mob{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .service2 , .whyus-sec , .plans{
+        padding: 30px!important;
+    }
+    
+    .contents .h4{
+        line-height: .2;
+    }
+    .contents h1{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(to right , rgb(152, 40, 146),rgb(74,27,156)) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+}
+
+.header{
+    width: 100%;
+    padding: 0;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    border-bottom: .5px solid rgba(129, 129, 129, 0.541); 
+}
+.navbar-toggler i{
+    color: white;
+    font-size: 20px;
+}
+.nav-link{
+    color: #eee;
+    text-decoration: none;
+    transition: color .5s;
+    letter-spacing: 2px;
+    
+}
+
+.nav-link:hover{
+    color: rgb(231, 93, 187);  
+}
+.navbar-nav{
+    margin-left: 50px;
+    display: flex;
+}
+
+.seperator::before{
+    color: rgb(170, 109, 182);
+    content: "|";
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.info{
+    display: flex;
+    color: #eee;
+    align-items:center ;
+    margin-right: auto;
+    letter-spacing: 2px;
+    margin-left: 50px;
+    order: -1;
+}
+.custom-nav{
+border: none;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.secound-nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-top: 20px;
+}
+
+.secound-nav ul li{
+    display: inline;
+    list-style: none;
+}
+
+.navbar-brand a{
+    font-size: 30px;
+}
+.secound-nav ul li a{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.5s;
+  }
+  .secound-nav ul li a:hover{
+    color: rgb(231, 93, 187);
+  }
+
+@media screen and (max-width:992px){
+    .info{
+       justify-content: center;
+       margin: 0%;
+    }
+    .info hr{
+        border: 1px solid white;
+    }
+    .navbar-nav{
+        margin: 20px 0;
+    }
+
+    .navbar-brand a{
+        font-size: 20px;
+        margin: 0 10px;
+        position: absolute;
+        top: 1px;
+        right: 10px;
+        align-items: center;
+        
+    }
+    .secound-nav{
+        justify-content: center;
+    }
+    .secound-nav ul li a{
+      font-size: 10px;
+      color: white;
+      text-decoration: none;
+    }
+}
+/* end of navbar */
+/* header-info */
+.container-fluid{
+    width: 100%;
+    font-family:'Poppins', sans-serif;
+    letter-spacing: 1px;
+    padding: 0px 100px ;
+}
+
+.head-pic{
+    width: 90%;
+    
+}
+.text-col{
+    order: -1;
+}
+
+.text-col .fs{
+    font-size: 40px;
+    font-weight: bold;
+}
+.text-col .fs2{
+    font-size: 18px;
+}
+
+.btn{
+    background-color: #D55E54;
+    font-size: 13px;
+    color: #eee;
+    box-shadow: 0 0 5px 0px #343434;
+}
+.btn:hover{
+    color: #eee;
+    background-color: #aa4339;
+}
+
+@media screen and (max-width:992px) {
+
+    .text-col{
+        order: 1;
+        text-align: center;
+    }
+    .text-col .fs{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .text-col .fs2{
+        font-size: 11px;
+    }
+    .text-col br{
+        display: none;
+    }
+}
+/* end of header-info */
+.search-box{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    
+}
+
+.form-control{
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    padding: 0 20px;
+    box-shadow: 0 0 11px #343434;
+}
+.form-control:focus{
+    box-shadow: 0 0 11px #343434;
+}
+.search-box-btn{
+    height: 50px;
+    width: 100px;
+    padding: 20px 5px;
+    border: none;
+    background: linear-gradient(to right , rgb(248,115,207) , rgb(81,41,178));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: .5s;
+    
+}
+.search-box-btn:hover{
+    color: #343434;
+}
+
+@media screen and (max-width:992px) {
+  .search-box{
+    width: 100%;
+  }  
+
+  .domain-list li{
+    font-size: 10px;
+  }
+}
+
+/* options */
+.options-sec{
+    background-color: #1F08A2;
+}
+
+.card{
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 11px #343434;
+}
+/* end of options */
+/* why us */
+.whyus-sec{
+    background: linear-gradient(rgba(17, 1, 105, 0.623) , rgba(17, 1, 105, 0.623)) , url(./1x/351491689771af3a96396f7a490b969c.png);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 100px;
+    line-height: 1.8rem;
+}
+
+@media screen and (max-width:992px) {
+    .whyus-sec{
+        padding: 60px 60px;
+        text-align: center;
+    }
+    .whyus-sec p{
+        font-size: 12px;
+        text-align: left;
+    }
+    .center{
+        margin: auto;
+    }
+
+}
+/* end of why us */
+/* services */
+   .service-head{
+    color: #6B3C96;
+   } 
+/* end of services */
+/* services2 */
+.service2{
+    background-color: #1B1543;
+}
+.service2-fs{
+    font-size: 19px;
+    line-height: 2.5rem;
+}
+.service2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.service2 a:hover{
+    color: rgb(231, 93, 187); 
+}
+
+@media screen and (max-width:992px) {
+    .display-custom{
+        display: none;
+    }
+}
+/* end of services2 */
+/* plans */
+.plans{
+    background: linear-gradient(rgba(36, 50, 130, 0.815),rgba(36, 50, 130, 0.815)) , url(./1x/back.png);
+    background-size: cover;
+    background-position: center;
+}
+.main-back{
+    height: 80vh;
+    background:linear-gradient(172deg ,rgb(129,40,128) , rgb(146,98,255));
+    margin-top: 2.5rem;
+    border-radius: 30px;
+    width: 80%;
+    position: relative;
+}
+.main-back2{
+    height: 80vh;
+    background:linear-gradient(172deg ,rgb(129,40,128) , rgb(98,231,255));
+    margin-top: 2.5rem;
+    border-radius: 30px;
+    width: 80%;
+    position: relative;
+}
+.main-back3{
+    height: 80vh;
+    background:linear-gradient(172deg ,rgb(129,40,128) , rgb(98,255,152));
+    margin-top: 2.5rem;
+    border-radius: 30px;
+    width: 80%;
+    position: relative;
+}
+.contents{
+    height: 80vh;
+    background-color: white; 
+    border-radius: 30px;
+    border-bottom-right-radius: 190px;
+}
+
+.buy-btn{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    font-size: 19px;
+    color: white;
+    transform: rotate(318deg);
+    text-decoration: none;
+}
+.buy-btn2{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    font-size: 19px;
+    color: white;
+    transform: rotate(318deg);
+    text-decoration: none;
+}
+.buy-btn3{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    font-size: 19px;
+    color: white;
+    transform: rotate(318deg);
+    text-decoration: none;
+}
+.buy-btn:hover ,
+.buy-btn2:hover , 
+.buy-btn3:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.space{
+    position: relative;
+    width: 100px;
+    margin: auto;
+    padding: 10px 0px;
+}
+.space span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    color: #706A93;
+}
+/* end of plans */
+/* footer */
+footer{
+    background-color: #1B1543;
+}
+
+.send-email{
+    width: 80%;
+    position: relative; 
+}
+.email-form-control{
+    width: 80%;
+    height: 39px;
+    background-color: #fff;
+    border: none;
+    padding: 0 20px;
+    box-shadow: 0 0 11px #343434;
+    border-radius: 30px;  
+}
+.email-form-control:focus{
+    box-shadow: 0 0 11px #343434;
+    border: none;
+}
+.send-email-btn{
+    height: 39.5px;
+    width: 90px;
+    padding: 20px 5px;
+    border: none;
+    background-color:#3ECCED ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 19px;
+    right: 5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: .5s; 
+}
+@media screen and (max-width:770px){
+    .t-align{
+        text-align: center;
+    }
+    .border-b{
+        padding-top: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .send-email{
+        margin: auto;
+    }
+    .footer-info span , 
+    .footer-info a{
+        font-size: 10px;
+    }
+}
+/* end of footer */
+@font-face {
+    font-family: yekan;
+    src: url(./Font/IRANYekan.woff);
+}
+
+.my-message{
+   width: 100%;
+   height: 5vh;
+   background-color: #1B1543;
+   color:#fff ;
+   text-align: center;
+}
+.my-message p{
+    font-family: yekan;
+    font-size: 13px;
+}

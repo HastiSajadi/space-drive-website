@@ -1,0 +1,19 @@
+@media(max-width : 769px){
+    .contents .h4{
+        line-height: .2!important;
+    }
+    .t-align{
+        text-align: center;
+    }
+    .border-b{
+        padding-top: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .send-email{
+        margin: auto;
+    }
+    .footer-info span , 
+    .footer-info a{
+        font-size: 10px;
+    }
+}
